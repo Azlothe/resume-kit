@@ -1,0 +1,7 @@
+\resumeProjectHeading
+  {\textbf{Astrophysical N-Body Simulation} $|$ \emph{C++, MPI, Distributed Systems, High-Performance Computing}}{December 2025}
+  \resumeItemListStart
+    \resumeItem{Built a distributed N-body simulator with \textbf{MPI}, \underline{partitioning 100K+ bodies across distributed nodes} with replicated quadtrees and ring-based state exchange to eliminate centralized computation bottlenecks and serialization overhead.}
+    \resumeItem{\underline{Reduced memory footprint by 80\% (1.5 GB $\rightarrow$ 287 MB)} after memory profiling with \textbf{valgrind}, identifying optimizations for the dynamic quadtrees through lazy quadrant allocation, incremental mass propagation, and precomputation.}
+    \resumeItem{Investigated the communication-vs-computation tradeoff inherent in my design, analyzing empirical parallel performance to identify the inflection point where synchronization latency dominates computation throughput.}
+  \resumeItemListEnd
